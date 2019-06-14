@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Converting String First Variable to upper case</title>
+</head>
+<script>
+
+
+    var str = prompt("Enter the String :");
+
+    function Converting_str(str) {
+
+        var b = str.split(" ");
+
+        for (var i = 0; i < b.length; i++) {
+            var d = b[i].charAt(0).toUpperCase() + b[i].slice(1);
+            document.writeln(d);
+            b[i] = d;
+            console.log(b);
+            var j = b.join(" ");
+            console.log(j);
+        }
+    }
+    Converting_str(str);
+
+</script>
+
+<body>
+
+
+</body>
+
+</html>
